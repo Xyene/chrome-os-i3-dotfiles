@@ -1,0 +1,127 @@
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.hintstyle: hintfull
+Xft.dpi:        234
+
+rofi.terminal:				uxterm
+rofi.ssh-client:			/usr/bin/ssh
+rofi.ssh-command:			uxterm -e "{ssh-client} {host}"
+
+rofi.width:                          50
+rofi.lines:                          15
+rofi.columns:                        1
+rofi.font:                           DejaVu Sans Mono 9
+rofi.fg:                             #002B36
+rofi.bg:                             #FDF6E3
+rofi.fg-active:                      #268BD2
+rofi.fg-urgent:                      #DC322F
+rofi.hlfg-active:                    #FDF6E3
+rofi.hlfg-urgent:                    #FDF6E3
+rofi.bg-active:                      #FDF6E3
+rofi.bg-urgent:                      #FDF6E3
+rofi.hlbg-active:                    #268BD2
+rofi.hlbg-urgent:                    #DC322F
+rofi.bgalt:                          #FDF6E3
+rofi.hlfg:                           #EEE8D5
+rofi.hlbg:                           #586E75
+rofi.bc:                             #002B36
+rofi.color-enabled:                  true
+
+rofi.color-normal:                   argb:00000000, #ffffff, argb:00000000, #268bd2, #ffffff
+rofi.color-urgent:                   argb:00000000, #f3843d, argb:00000000, #268bd2, #ffc39c
+rofi.color-active:                   argb:00000000, #268bd2, argb:00000000, #268bd2, #205171
+rofi.color-window:                   argb:b2000000, #268bd2, #268bd2
+
+rofi.bw:                             4
+rofi.padding:                        20
+rofi.lazy-filter-limit:              15000
+rofi.line-margin:                    8
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 true
+rofi.fullscreen:                     false
+rofi.dpi:                            234
+
+rofi.kb-row-left:                    Control+Page_Up,Control+Left
+rofi.kb-row-right:                   Control+Page_Down,Control+Right
+rofi.kb-row-up:                      Up,Control+p,Shift+Tab,Control+Up
+rofi.kb-row-down:                    Down,Control+n,Control+Down
+
+
+*.background: #1c1b1a
+
+! special
+*.foreground: #ffffff
+*.foreground_bold: #ffffff
+*.cursorColor: #ffffff
+
+! black
+*.color0: #303030
+*.color8: #5f5f5f
+
+! red
+*.color1: #c03000
+*.color9: #ff0000
+
+! green
+*.color2: #b1d631
+*.color10: #a6cd07
+
+! yellow
+*.color3: #fecf35
+*.color11: #b5c865
+
+! blue
+*.color4: #426870
+*.color12: #4a7781
+
+! magenta
+*.color5: #6d506d
+*.color13: #ff0000
+
+! cyan
+*.color6: #4bb5c1
+*.color14: #4bb5c1
+
+! white
+*.color7: #e2e2e5
+*.color15: #e2e2e5
+
+URxvt.background: #1a1b1c
+URxvt*font: xft:DejaVu Sans Mono:size=8
+URxvt.scrollBar: false
+URxvt.internalBorder: 20
+URxvt.termName: xterm-256color
+
+xterm*faceName: xft:DejaVu Sans Mono
+
+xterm*faceSize1: 5
+xterm*faceSize2: 6
+xterm*faceSize3: 7
+! default
+xterm*faceSize: 8
+xterm*faceSize4: 8
+xterm*faceSize5: 10
+xterm*faceSize6: 12
+
+xterm*termName: xterm-256color
+xterm*ScrollBar: false
+xterm*rightScrollBar: false
+xterm*internalBorder: 20
+
+xterm*allowTermcapOps: true
+xterm*allowTitleOps: true
+xterm*allowWindowOps: true
+xterm*utf8Title: true
+
+xterm*saveLines: 16384
+!xterm*selectToClipboard: true
+XTerm*on3Clicks: regex [[:alpha:]]+://([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+                 Ctrl <Key>+:          larger-vt-font() \n\
+                 Ctrl <Key>-:          smaller-vt-font() \n\
+                 Ctrl <Btn1Up>:        exec-formatted("run-browser '%t'", PRIMARY)
+! Also want `xset b off` in ~/.bashrc
+xterm*visualBell: false
